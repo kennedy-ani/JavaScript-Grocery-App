@@ -9,10 +9,10 @@ Basic JavaScript Knowledge <br/>
 A Brain to think
 
 # Features 💎
-✅ Creation of multiple lists
-✅ Delete lists 
-✅ Add items in the list
-✅ Checkout items from the list
+✅ Creation of multiple lists <br/>
+✅ Delete lists <br/>
+✅ Add items in the list <br/>
+✅ Checkout items from the list <br/>
 ✅ Delete items from the list
 
 # Frameworks 🛠
