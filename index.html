@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <button type="button" id="groceryBtn" class="btn btn-primary" data-toggle="modal" data-target="#createListModal">
+            Create A Grocery List
+        </button>
+          
+          <!-- Modal -->
+        <div class="modal fade" id="createListModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create Your List</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="inputData" placeholder="Write List Name...">
+                        <span class="text-danger" id="errorMsg"></span>
+                    </div>
+                    <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="submit" id="saveList" data-dismiss="modal" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="listContainer"></div>
+
+        <!-- modal for writing items -->
+        <div class="modal fade" id="createItemModal" tabindex="-1" role="dialog" aria-labelledby="listTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="listTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="inputitemData" class="w-75 p-2" placeholder="Write Your Item...">
+                        <button id="addItemBtn" class="addItemBtn btn btn-danger rounded"><i class="fa-solid fa-plus"></i></button>
+                        <span class="text-danger" id="errorMsg2"></span>
+
+                        <!-- item holder -->
+                        <div class="itemContainer" id="itemContainer"></div>
+                    </div>
+                    <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <!-- <button type="submit" id="saveList" data-dismiss="modal" class="btn btn-primary">Save</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- JavaScript -->
+    <!-- <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <script src="/js/bootstrap/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- custom javascript -->
+    <script src="/js/createList.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+#groceryBtn{
+    margin: 10rem 0 0 22rem;
+    width: 30%;
+    /* font-size: 1.1rem; */
+    background: rgb(3, 199, 68);
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+}
+
+#groceryCreation{
+    margin: 8rem 0 0 0;
+}
+
+#exampleModalLabel{
+    /* text-align: center; */
+    margin: 0 0 0 10rem;
+    font-weight: 600;
+}
+
+#createListModal{
+    margin: 8rem 0;
+}
+
+
+#ListModal{
+    font-weight:500;
+}
+
+#inputData{
+    width: 100%;
+    padding:1rem;
+    /* margin: 1rem; */
+    outline: none;
+    border: 3px solid rgba(3, 199, 68, 0.357);
+}
+
+#saveList{
+    margin: 0 13rem;
+    background: rgb(3, 199, 68);
+    border: none;
+    outline: none;
+    /* width: 100%; */
+}
+
+.item-p #itemCheckbox .itemDeleteBtn{
+    display: flex;
+
+}
+
+.item-p{
+    color: rgb(14, 14, 14);
+    margin: 4rem 5rem 0 5rem;
+    padding: 0;
+    text-align: center;
+}
+
+#itemCheckbox{
+    margin: 0 0 0 2rem;
+}
+
+.itemDeleteBtn{
+    margin: -3.5rem 0 0 21rem;
+}
