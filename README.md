@@ -5,7 +5,7 @@ An small app I built to help create shopping especially groceries.
 Give it a star it you like what you see.
 
 # Requirements
-Basic JavaScript Knowledge
+Basic JavaScript Knowledge <br/>
 A Brain to think
 
 # Features
